@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "DetailViewController.h"
+#import "MasterViewController.h"
+#import "PDXPokemonDoc.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    PDXPokemonDoc *bulbasaur = [[PDXPokemonDoc alloc]initWithName:@"Bulbasaur" type:@"Grass" thumbImage:[UIImage imageNamed:@"bulbasaur.jpg"] fullImage:[UIImage imageNamed:@"bulbasaur.jpg"]];
+    PDXPokemonDoc *ivysaur = [[PDXPokemonDoc alloc]initWithName:@"Ivysaur" type:@"Grass" thumbImage:[UIImage imageNamed:@"ivysaur.jpg"] fullImage:[UIImage imageNamed:@"ivysaur.jpg"]];
+    NSMutableArray *monsters = [NSMutableArray arrayWithObjects:bulbasaur,ivysaur, nil];
+    UINavigationController *navController = (UINavigationController *) self.window.rootViewController ;
+    MasterViewController *masterController = [navController.viewControllers objectAtIndex:0];
+    masterController.monsters = monsters ;
+    
     // Override point for customization after application launch.
     return YES;
 }

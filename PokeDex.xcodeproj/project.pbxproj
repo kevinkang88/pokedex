@@ -15,6 +15,13 @@
 		67EACFBC1B6718D700B89C62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67EACFBB1B6718D700B89C62 /* Images.xcassets */; };
 		67EACFBF1B6718D700B89C62 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67EACFBD1B6718D700B89C62 /* LaunchScreen.xib */; };
 		67EACFCB1B6718D700B89C62 /* PokeDexTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EACFCA1B6718D700B89C62 /* PokeDexTests.m */; };
+		67EACFD81B671ACD00B89C62 /* PDXPokemonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EACFD71B671ACD00B89C62 /* PDXPokemonData.m */; };
+		67EACFDB1B671E6C00B89C62 /* PDXPokemonDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EACFDA1B671E6C00B89C62 /* PDXPokemonDoc.m */; };
+		67EACFE21B6729A900B89C62 /* bulbasaur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67EACFDD1B6729A900B89C62 /* bulbasaur.jpg */; };
+		67EACFE31B6729A900B89C62 /* charizard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67EACFDE1B6729A900B89C62 /* charizard.jpg */; };
+		67EACFE41B6729A900B89C62 /* charmander.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67EACFDF1B6729A900B89C62 /* charmander.jpg */; };
+		67EACFE51B6729A900B89C62 /* ivysaur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67EACFE01B6729A900B89C62 /* ivysaur.jpg */; };
+		67EACFE61B6729A900B89C62 /* venusaur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67EACFE11B6729A900B89C62 /* venusaur.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +50,15 @@
 		67EACFC41B6718D700B89C62 /* PokeDexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeDexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67EACFC91B6718D700B89C62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67EACFCA1B6718D700B89C62 /* PokeDexTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokeDexTests.m; sourceTree = "<group>"; };
+		67EACFD61B671ACD00B89C62 /* PDXPokemonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDXPokemonData.h; sourceTree = "<group>"; };
+		67EACFD71B671ACD00B89C62 /* PDXPokemonData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDXPokemonData.m; sourceTree = "<group>"; };
+		67EACFD91B671E6C00B89C62 /* PDXPokemonDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDXPokemonDoc.h; sourceTree = "<group>"; };
+		67EACFDA1B671E6C00B89C62 /* PDXPokemonDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDXPokemonDoc.m; sourceTree = "<group>"; };
+		67EACFDD1B6729A900B89C62 /* bulbasaur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bulbasaur.jpg; sourceTree = "<group>"; };
+		67EACFDE1B6729A900B89C62 /* charizard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = charizard.jpg; sourceTree = "<group>"; };
+		67EACFDF1B6729A900B89C62 /* charmander.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = charmander.jpg; sourceTree = "<group>"; };
+		67EACFE01B6729A900B89C62 /* ivysaur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ivysaur.jpg; sourceTree = "<group>"; };
+		67EACFE11B6729A900B89C62 /* venusaur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = venusaur.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,13 +100,9 @@
 		67EACFAA1B6718D700B89C62 /* PokeDex */ = {
 			isa = PBXGroup;
 			children = (
-				67EACFAF1B6718D700B89C62 /* AppDelegate.h */,
-				67EACFB01B6718D700B89C62 /* AppDelegate.m */,
-				67EACFB21B6718D700B89C62 /* MasterViewController.h */,
-				67EACFB31B6718D700B89C62 /* MasterViewController.m */,
-				67EACFB51B6718D700B89C62 /* DetailViewController.h */,
-				67EACFB61B6718D700B89C62 /* DetailViewController.m */,
-				67EACFB81B6718D700B89C62 /* Main.storyboard */,
+				67EACFDC1B67299600B89C62 /* IMG */,
+				67EACFD51B67198400B89C62 /* Model */,
+				67EACFD41B67197500B89C62 /* GUI */,
 				67EACFBB1B6718D700B89C62 /* Images.xcassets */,
 				67EACFBD1B6718D700B89C62 /* LaunchScreen.xib */,
 				67EACFAB1B6718D700B89C62 /* Supporting Files */,
@@ -122,6 +134,43 @@
 				67EACFC91B6718D700B89C62 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		67EACFD41B67197500B89C62 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				67EACFAF1B6718D700B89C62 /* AppDelegate.h */,
+				67EACFB01B6718D700B89C62 /* AppDelegate.m */,
+				67EACFB21B6718D700B89C62 /* MasterViewController.h */,
+				67EACFB31B6718D700B89C62 /* MasterViewController.m */,
+				67EACFB51B6718D700B89C62 /* DetailViewController.h */,
+				67EACFB61B6718D700B89C62 /* DetailViewController.m */,
+				67EACFB81B6718D700B89C62 /* Main.storyboard */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		67EACFD51B67198400B89C62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67EACFD61B671ACD00B89C62 /* PDXPokemonData.h */,
+				67EACFD71B671ACD00B89C62 /* PDXPokemonData.m */,
+				67EACFD91B671E6C00B89C62 /* PDXPokemonDoc.h */,
+				67EACFDA1B671E6C00B89C62 /* PDXPokemonDoc.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		67EACFDC1B67299600B89C62 /* IMG */ = {
+			isa = PBXGroup;
+			children = (
+				67EACFDD1B6729A900B89C62 /* bulbasaur.jpg */,
+				67EACFDE1B6729A900B89C62 /* charizard.jpg */,
+				67EACFDF1B6729A900B89C62 /* charmander.jpg */,
+				67EACFE01B6729A900B89C62 /* ivysaur.jpg */,
+				67EACFE11B6729A900B89C62 /* venusaur.jpg */,
+			);
+			name = IMG;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,9 +253,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67EACFE41B6729A900B89C62 /* charmander.jpg in Resources */,
 				67EACFBA1B6718D700B89C62 /* Main.storyboard in Resources */,
+				67EACFE21B6729A900B89C62 /* bulbasaur.jpg in Resources */,
+				67EACFE31B6729A900B89C62 /* charizard.jpg in Resources */,
+				67EACFE61B6729A900B89C62 /* venusaur.jpg in Resources */,
 				67EACFBF1B6718D700B89C62 /* LaunchScreen.xib in Resources */,
 				67EACFBC1B6718D700B89C62 /* Images.xcassets in Resources */,
+				67EACFE51B6729A900B89C62 /* ivysaur.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,10 +278,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67EACFD81B671ACD00B89C62 /* PDXPokemonData.m in Sources */,
 				67EACFB11B6718D700B89C62 /* AppDelegate.m in Sources */,
 				67EACFB41B6718D700B89C62 /* MasterViewController.m in Sources */,
 				67EACFAE1B6718D700B89C62 /* main.m in Sources */,
 				67EACFB71B6718D700B89C62 /* DetailViewController.m in Sources */,
+				67EACFDB1B671E6C00B89C62 /* PDXPokemonDoc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

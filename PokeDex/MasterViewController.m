@@ -8,6 +8,8 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "PDXPokemonData.h"
+#import "PDXPokemonDoc.h"
 
 @interface MasterViewController ()
 
@@ -15,6 +17,8 @@
 @end
 
 @implementation MasterViewController
+
+@synthesize monsters = _monsters ;
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -27,6 +31,8 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+    
+    self.title = @"PokeDex" ;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -60,14 +66,15 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.objects.count;
+    return self.monsters.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
-    NSDate *object = self.objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyBasicCell"];
+    PDXPokemonDoc *pokemonDoc = [self.monsters objectAtIndex: indexPath.row];
+    cell.textLabel.text = pokemonDoc.data.name ;
+    cell.imageView.image = pokemonDoc.thumbImage ;
+    
     return cell;
 }
 
