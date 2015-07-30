@@ -12,8 +12,10 @@
 
 @property (nonatomic,strong) NSString *name ;
 @property (nonatomic,strong) NSString *type ;
+@property (nonatomic,assign) float *rating ;
 
 -(id)initWithName:(NSString *)name
-             type:(NSString *)type ;
+             type:(NSString *)type
+           rating:(float)rating;
 
 @end

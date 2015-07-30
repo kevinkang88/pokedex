@@ -19,6 +19,7 @@
 
 - (id) initWithName:(NSString *)name
                type:(NSString *)type
+             rating:(float)rating 
          thumbImage:(UIImage *)thumbImage
           fullImage:(UIImage *)fullImage ;
 

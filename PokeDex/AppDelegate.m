@@ -19,8 +19,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    PDXPokemonDoc *bulbasaur = [[PDXPokemonDoc alloc]initWithName:@"Bulbasaur" type:@"Grass" thumbImage:[UIImage imageNamed:@"bulbasaur.jpg"] fullImage:[UIImage imageNamed:@"bulbasaur.jpg"]];
-    PDXPokemonDoc *ivysaur = [[PDXPokemonDoc alloc]initWithName:@"Ivysaur" type:@"Grass" thumbImage:[UIImage imageNamed:@"ivysaur.jpg"] fullImage:[UIImage imageNamed:@"ivysaur.jpg"]];
+    PDXPokemonDoc *bulbasaur = [[PDXPokemonDoc alloc]initWithName:@"Bulbasaur" type:@"Grass" rating:1 thumbImage:[UIImage imageNamed:@"bulbasaur.jpg"] fullImage:[UIImage imageNamed:@"bulbasaur.jpg"]];
+    PDXPokemonDoc *ivysaur = [[PDXPokemonDoc alloc]initWithName:@"Ivysaur" type:@"Grass" rating:2 thumbImage:[UIImage imageNamed:@"ivysaur.jpg"] fullImage:[UIImage imageNamed:@"ivysaur.jpg"]];
     NSMutableArray *monsters = [NSMutableArray arrayWithObjects:bulbasaur,ivysaur, nil];
     UINavigationController *navController = (UINavigationController *) self.window.rootViewController ;
     MasterViewController *masterController = [navController.viewControllers objectAtIndex:0];

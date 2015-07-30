@@ -16,9 +16,9 @@
 @synthesize thumbImage = _thumbImage ;
 @synthesize fullImage = _fullImage ;
 
-- (id)initWithName:(NSString *)name type:(NSString *)type thumbImage:(UIImage *)thumbImage fullImage:(UIImage *)fullImage {
+- (id)initWithName:(NSString *)name type:(NSString *)type rating:(float)rating thumbImage:(UIImage *)thumbImage fullImage:(UIImage *)fullImage {
     if(self = [super init]){
-        self.data = [[PDXPokemonData alloc] initWithName:name type:type ];
+        self.data = [[PDXPokemonData alloc] initWithName:name type:type rating:rating ];
         self.thumbImage = thumbImage ;
         self.fullImage = fullImage ;
     }
